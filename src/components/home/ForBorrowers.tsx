@@ -20,22 +20,22 @@ const ForBorrowers = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {[
                 {
-                  icon: <DollarSign className="h-6 w-6 text-zahabi-gold" />,
+                  icon: <DollarSign className="h-6 w-6 text-purple" />,
                   title: "Competitive Rates",
                   description: "Get loans at rates lower than traditional banks and credit cards."
                 },
                 {
-                  icon: <Clock className="h-6 w-6 text-zahabi-gold" />,
+                  icon: <Clock className="h-6 w-6 text-purple" />,
                   title: "Quick Processing",
                   description: "Receive funds within 24 hours of gold verification."
                 },
                 {
-                  icon: <ShieldCheck className="h-6 w-6 text-zahabi-gold" />,
+                  icon: <ShieldCheck className="h-6 w-6 text-purple" />,
                   title: "Secure Storage",
                   description: "Your gold is stored in insured, high-security vaults."
                 },
                 {
-                  icon: <Percent className="h-6 w-6 text-zahabi-gold" />,
+                  icon: <Percent className="h-6 w-6 text-purple" />,
                   title: "Flexible Terms",
                   description: "Choose repayment terms that suit your financial situation."
                 }
@@ -51,7 +51,7 @@ const ForBorrowers = () => {
             </div>
             
             <div className="flex justify-center mt-8">
-              <CustomButton variant="gold">
+                <CustomButton className="bg-purple hover:bg-purple-600">
                 Apply for a Loan
               </CustomButton>
             </div>

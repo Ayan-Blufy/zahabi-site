@@ -52,6 +52,13 @@ const Navbar = () => {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-8">
+        <a 
+            href="#how-it-works" 
+            className="text-sm font-medium text-foreground hover:text-zahabi-gold transition-colors duration-200"
+          >
+            How It Works
+          </a>
+          
           <a 
             href="#for-borrowers" 
             className="text-sm font-medium text-foreground hover:text-zahabi-gold transition-colors duration-200"
@@ -64,24 +71,13 @@ const Navbar = () => {
           >
             For Investors
           </a>
-          <a 
-            href="#how-it-works" 
-            className="text-sm font-medium text-foreground hover:text-zahabi-gold transition-colors duration-200"
-          >
-            How It Works
-          </a>
+         
         </nav>
 
         {/* CTA Buttons */}
         <div className="hidden md:flex items-center gap-4">
-          <a 
-            href="/login" 
-            className="text-sm font-medium text-foreground hover:text-zahabi-gold transition-colors duration-200"
-          >
-            Log In
-          </a>
-          <CustomButton variant="outline" size="sm" className="border-zahabi-gold text-zahabi-dark">
-            Sign up
+          <CustomButton variant="outline" size="sm" className="border-purple-200 hover:bg-purple-50 hover:text-purple-700">
+           Let's connect 
           </CustomButton>
         </div>
 
@@ -121,6 +117,14 @@ const Navbar = () => {
           )}
         >
           <div className="flex flex-col items-center justify-center h-full space-y-8 p-8">
+          <a 
+              href="#how-it-works" 
+              className="text-lg font-medium hover:text-zahabi-gold transition-colors"
+              onClick={toggleMenu}
+            >
+              How It Works
+            </a>
+           
             <a 
               href="#for-borrowers" 
               className="text-lg font-medium hover:text-zahabi-gold transition-colors"
@@ -135,22 +139,10 @@ const Navbar = () => {
             >
               For Investors
             </a>
-            <a 
-              href="#how-it-works" 
-              className="text-lg font-medium hover:text-zahabi-gold transition-colors"
-              onClick={toggleMenu}
-            >
-              How It Works
-            </a>
-            <a 
-              href="/login" 
-              className="text-lg font-medium hover:text-zahabi-gold transition-colors"
-              onClick={toggleMenu}
-            >
-              Log In
-            </a>
-            <CustomButton size="lg" variant="outline" className="border-zahabi-gold text-zahabi-dark" onClick={toggleMenu}>
-              Sign up
+            
+      
+            <CustomButton size="lg" variant="outline" className="border-purple-200 hover:bg-purple-50 hover:text-purple-700" onClick={toggleMenu}>
+             Let's connect
             </CustomButton>
           </div>
         </div>

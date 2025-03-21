@@ -86,22 +86,22 @@ const ForInvestors = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {[
                 {
-                  icon: <TrendingUp className="h-6 w-6 text-zahabi-gold" />,
+                  icon: <TrendingUp className="h-6 w-6 text-purple" />,
                   title: "Steady Returns",
                   description: "Gold has historically provided strong returns and protection against inflation."
                 },
                 {
-                  icon: <BarChart className="h-6 w-6 text-zahabi-gold" />,
+                  icon: <BarChart className="h-6 w-6 text-purple" />,
                   title: "Portfolio Diversification",
                   description: "Balance your investment portfolio with a stable, physical asset."
                 },
                 {
-                  icon: <Shield className="h-6 w-6 text-zahabi-gold" />,
+                  icon: <Shield className="h-6 w-6 text-purple" />,
                   title: "Fully Backed",
                   description: "Every token is backed 1:1 with physical gold stored in secure vaults."
                 },
                 {
-                  icon: <Coins className="h-6 w-6 text-zahabi-gold" />,
+                  icon: <Coins className="h-6 w-6 text-purple" />,
                   title: "Instant Liquidity",
                   description: "Buy and sell gold tokens instantly without physical handling."
                 }
@@ -119,16 +119,16 @@ const ForInvestors = () => {
             <div className="p-6 border border-zahabi-gold/10 bg-white rounded-xl">
               <div className="flex flex-col md:flex-row items-start gap-4">
                 <div className="p-3 bg-zahabi-cream rounded-full">
-                  <div className="w-10 h-10 rounded-full bg-zahabi-gold flex items-center justify-center text-white font-semibold">
+                  <div className="w-10 h-10 rounded-full bg-purple flex items-center justify-center text-white font-semibold">
                     %
                   </div>
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold mb-2">Earn Passive Income</h3>
                   <p className="text-muted-foreground text-sm mb-3">
-                    Stake your gold tokens to earn additional passive income. Current staking APY is <span className="font-semibold text-zahabi-gold">5.2%</span>.
+                    Stake your gold tokens to earn additional passive income. Current staking APY is <span className="font-semibold text-purple">5.2%</span>.
                   </p>
-                  <CustomButton variant="outline" size="sm" className="text-xs border-zahabi-gold/50">
+                  <CustomButton variant="outline" size="sm" className="border-purple-200 hover:bg-purple-50 hover:text-purple-700">
                     Learn About Staking
                   </CustomButton>
                 </div>

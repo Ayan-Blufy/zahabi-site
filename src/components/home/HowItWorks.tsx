@@ -1,70 +1,111 @@
 
 import React from "react";
-import { Check, Coins, ArrowRight, ShieldCheck } from "lucide-react";
+import { Check, Coins, ArrowRight, ShieldCheck, Users, BanknoteIcon, TrendingUp, Repeat } from "lucide-react";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@radix-ui/react-tabs";
 
 const HowItWorks = () => {
   return (
-    <section id="how-it-works" className="py-24 bg-white">
-      <div className="container mx-auto px-6">
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">How It Works</h2>
-          <p className="text-muted-foreground">
+    <section id="how-it-works" className="w-full bg-zahabi-cream/30 py-12 md:py-24 lg:py-32">
+    <div className="container px-4 md:px-6">
+      <div className="flex flex-col items-center justify-center space-y-4 text-center">
+        <div className="space-y-2">
+          <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight">How It Works</h2>
+          <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl">
             A simple 3-step process for both borrowers and investors
           </p>
         </div>
-        
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-          {[
-            {
-              icon: <Coins className="h-12 w-12 text-zahabi-gold" />,
-              title: "Deposit Gold",
-              description: "Deposit your physical gold at our secure facilities or tokenize existing gold certificates.",
-              step: "01"
-            },
-            {
-              icon: <Check className="h-12 w-12 text-zahabi-gold" />,
-              title: "Verify & Evaluate",
-              description: "Our experts verify authenticity and evaluate the current market value of your gold.",
-              step: "02"
-            },
-            {
-              icon: <ArrowRight className="h-12 w-12 text-zahabi-gold" />,
-              title: "Borrow or Invest",
-              description: "Choose to take a loan against your gold or invest in gold-backed tokens.",
-              step: "03"
-            }
-          ].map((item, index) => (
-            <div 
-              key={index}
-              className="relative p-8 rounded-2xl border border-zahabi-gold/10 bg-white shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1"
-            >
-              <div className="absolute -right-3 -top-3 bg-white w-10 h-10 rounded-full border border-zahabi-gold/10 flex items-center justify-center">
-                <span className="text-sm font-semibold text-zahabi-gold">{item.step}</span>
+      </div>
+
+      <Tabs defaultValue="borrowers" className="mt-8">
+        <TabsList className="grid w-full max-w-md mx-auto grid-cols-2">
+          <TabsTrigger value="borrowers">For Borrowers</TabsTrigger>
+          <TabsTrigger value="investors">For Investors</TabsTrigger>
+        </TabsList>
+
+        <TabsContent value="borrowers" className="mt-6">
+          <div className="mx-auto grid max-w-5xl gap-8 py-8 md:grid-cols-3">
+            <div className="flex flex-col items-center space-y-4 rounded-lg border p-6 shadow-sm">
+              <div className="rounded-full bg-purple p-4">
+                <Coins className="h-6 w-6 text-white" />
               </div>
-              <div className="mb-6">
-                {item.icon}
-              </div>
-              <h3 className="text-xl font-semibold mb-4">{item.title}</h3>
-              <p className="text-muted-foreground">{item.description}</p>
-            </div>
-          ))}
-        </div>
-        
-        <div className="mt-20 p-8 rounded-2xl border border-zahabi-gold/10 bg-zahabi-cream/30 max-w-5xl mx-auto">
-          <div className="flex flex-col md:flex-row items-center gap-6">
-            <div className="md:w-16 flex-shrink-0 flex justify-center">
-              <ShieldCheck className="h-12 w-12 text-zahabi-gold" />
-            </div>
-            <div>
-              <h3 className="text-xl font-semibold mb-2">100% Secure & Insured</h3>
-              <p className="text-muted-foreground">
-                All gold deposits are stored in high-security vaults and fully insured. Our gold-backed tokens are audited by independent parties and secured on a transparent blockchain.
+              <h3 className="text-xl font-bold">Pledge Your Gold</h3>
+              <p className="text-center text-muted-foreground">
+                Bring your gold to one of our verified lender partners for evaluation and secure storage.
               </p>
+              <div className="flex items-center justify-center w-8 h-8 rounded-full bg-purple text-white font-bold">
+                1
+              </div>
+            </div>
+            <div className="flex flex-col items-center space-y-4 rounded-lg border p-6 shadow-sm">
+              <div className="rounded-full bg-purple p-4">
+                <Users className="h-6 w-6 text-white" />
+              </div>
+              <h3 className="text-xl font-bold">Choose a Lender</h3>
+              <p className="text-center text-muted-foreground">
+                Compare loan offers from multiple lenders to find the best rates and terms for your needs.
+              </p>
+              <div className="flex items-center justify-center w-8 h-8 rounded-full bg-purple text-white font-bold">
+                2
+              </div>
+            </div>
+            <div className="flex flex-col items-center space-y-4 rounded-lg border p-6 shadow-sm">
+              <div className="rounded-full bg-purple p-4">
+                <BanknoteIcon className="h-6 w-6 text-white" />
+              </div>
+              <h3 className="text-xl font-bold">Receive Funds Instantly</h3>
+              <p className="text-center text-muted-foreground">
+                Get your loan amount transferred directly to your bank account within minutes.
+              </p>
+              <div className="flex items-center justify-center w-8 h-8 rounded-full bg-purple text-white font-bold">
+                3
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
+        </TabsContent>
+
+        <TabsContent value="investors" className="mt-6">
+          <div className="mx-auto grid max-w-5xl gap-8 py-8 md:grid-cols-3">
+            <div className="flex flex-col items-center space-y-4 rounded-lg border p-6 shadow-sm">
+              <div className="rounded-full bg-purple p-4">
+                <Coins className="h-6 w-6 text-white" />
+              </div>
+              <h3 className="text-xl font-bold">Buy Gold-Backed Tokens</h3>
+              <p className="text-center text-muted-foreground">
+                Purchase tokens that represent fractional ownership of physical gold held in secure vaults.
+              </p>
+              <div className="flex items-center justify-center w-8 h-8 rounded-full bg-purple text-white font-bold">
+                1
+              </div>
+            </div>
+            <div className="flex flex-col items-center space-y-4 rounded-lg border p-6 shadow-sm">
+              <div className="rounded-full bg-purple p-4">
+                <TrendingUp className="h-6 w-6 text-white" />
+              </div>
+              <h3 className="text-xl font-bold">Earn Interest</h3>
+              <p className="text-center text-muted-foreground">
+                Receive a portion of the interest paid by borrowers, creating passive income from your investment.
+              </p>
+              <div className="flex items-center justify-center w-8 h-8 rounded-full bg-purple text-white font-bold">
+                2
+              </div>
+            </div>
+            <div className="flex flex-col items-center space-y-4 rounded-lg border p-6 shadow-sm">
+              <div className="rounded-full bg-purple p-4">
+                <Repeat className="h-6 w-6 text-white" />
+              </div>
+              <h3 className="text-xl font-bold">Trade Tokens for Profit</h3>
+              <p className="text-center text-muted-foreground">
+                Sell your tokens on our marketplace at any time to realize gains from gold price appreciation.
+              </p>
+              <div className="flex items-center justify-center w-8 h-8 rounded-full bg-purple text-white font-bold">
+                3
+              </div>
+            </div>
+          </div>
+        </TabsContent>
+      </Tabs>
+    </div>
+  </section>
   );
 };
 

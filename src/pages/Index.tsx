@@ -6,6 +6,8 @@ import ForBorrowers from "@/components/home/ForBorrowers";
 import ForInvestors from "@/components/home/ForInvestors";
 import HowItWorks from "@/components/home/HowItWorks";
 import Footer from "@/components/layout/Footer";
+import KeyFeatures from "@/components/home/KeyFeatures";
+import AppVideo from "@/components/home/AppVideo";
 
 const Index = () => {
   // Smooth scroll for anchor links
@@ -33,9 +35,11 @@ const Index = () => {
     <div className="min-h-screen bg-white">
       <Navbar />
       <Hero />
+      <AppVideo />
+      <HowItWorks />
       <ForBorrowers />
       <ForInvestors />
-      <HowItWorks />
+      <KeyFeatures/>
       <Footer />
     </div>
   );
