@@ -73,7 +73,19 @@
   }
 
   .text-gradient {
-    @apply bg-gradient-to-r from-purple-dark via-purple to-purple-light bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-zahabi-gold via-gold to-zahabi-orange bg-clip-text text-transparent;
+  }
+  
+  .gold-gradient {
+    @apply bg-gradient-to-r from-zahabi-gold to-zahabi-orange;
+  }
+  
+  .btn-gold {
+    @apply bg-gradient-to-r from-zahabi-gold to-zahabi-orange text-white hover:shadow-md transition-all duration-300;
+  }
+  
+  .btn-outline {
+    @apply border-2 border-zahabi-gold text-zahabi-dark hover:bg-zahabi-cream transition-all duration-300;
   }
 }
 

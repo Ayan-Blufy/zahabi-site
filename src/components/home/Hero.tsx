@@ -1,92 +1,46 @@
 
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import { CustomButton } from "../ui/CustomButton";
+import { ArrowRight } from "lucide-react";
 
 const Hero = () => {
-  const heroRef = useRef<HTMLDivElement>(null);
-  const imageRef = useRef<HTMLDivElement>(null);
-
-  // Parallax effect on scroll
-  useEffect(() => {
-    const handleScroll = () => {
-      if (imageRef.current) {
-        const scrollY = window.scrollY;
-        imageRef.current.style.transform = `translateY(${scrollY * 0.15}px)`;
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
   return (
-    <section 
-      ref={heroRef}
-      className="relative min-h-screen pt-28 pb-20 overflow-hidden flex items-center"
-    >
-      {/* Background pattern */}
-      <div className="absolute inset-0 bg-hero-pattern opacity-30"></div>
-
-      {/* Colored circles */}
-      <div className="absolute -top-20 -right-20 w-64 h-64 bg-purple/10 rounded-full blur-3xl"></div>
-      <div className="absolute top-1/2 -left-32 w-96 h-96 bg-purple/5 rounded-full blur-3xl"></div>
-
-      <div className="container mx-auto px-6 relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-6 items-center">
+    <section className="pt-32 pb-20 bg-zahabi-cream/30">
+      <div className="container mx-auto px-6">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Content */}
           <div className="space-y-8 max-w-xl">
-            <div className="inline-flex items-center px-3 py-1.5 bg-purple/10 rounded-full">
-              <span className="text-xs font-medium text-purple">Introducing Our Latest Innovation</span>
-            </div>
-            
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-tight text-balance">
-              Design with <span className="text-gradient">Elegance</span> and Clarity
+              Unlock the Value of Your <span className="text-gradient">Gold</span> <br />
+              — Borrow, Invest, Grow
             </h1>
             
             <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
-              Discover a product that combines minimalist aesthetics with intuitive functionality.
-              Crafted for those who appreciate simplicity, quality, and thoughtful design.
+              Collateralize gold for instant loans or invest in gold-backed tokens with zero physical storage.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4">
-              <CustomButton size="lg">
-                Start Your Journey
+              <CustomButton size="lg" variant="gold" className="group">
+                Get a Loan Now
+                <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
               </CustomButton>
               <CustomButton size="lg" variant="outline">
-                Learn More
+                Start Investing
               </CustomButton>
-            </div>
-            
-            <div className="pt-4 grid grid-cols-3 gap-8">
-              <div className="text-center">
-                <p className="text-2xl font-semibold text-foreground">99%</p>
-                <p className="text-sm text-muted-foreground">Satisfaction</p>
-              </div>
-              <div className="text-center">
-                <p className="text-2xl font-semibold text-foreground">24/7</p>
-                <p className="text-sm text-muted-foreground">Support</p>
-              </div>
-              <div className="text-center">
-                <p className="text-2xl font-semibold text-foreground">100k+</p>
-                <p className="text-sm text-muted-foreground">Happy Users</p>
-              </div>
             </div>
           </div>
           
           {/* Image */}
-          <div 
-            ref={imageRef}
-            className="aspect-square w-full max-w-md mx-auto lg:max-w-full relative animate-float"
-          >
-            <div className="relative z-10 w-full h-full rounded-3xl overflow-hidden shadow-xl border border-white/20 glass">
-              <div className="absolute inset-0 bg-gradient-to-br from-purple-light/30 via-transparent to-purple/20"></div>
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="w-3/4 h-3/4 rounded-full bg-purple/5 flex items-center justify-center">
-                  <div className="w-1/2 h-1/2 rounded-full bg-purple/10 flex items-center justify-center">
-                    <div className="w-1/2 h-1/2 rounded-full bg-purple/20 flex items-center justify-center">
-                      <div className="w-8 h-8 rounded-full bg-purple pulse-animation"></div>
+          <div className="relative w-full max-w-md mx-auto lg:max-w-full">
+            <div className="aspect-square w-full rounded-3xl overflow-hidden shadow-xl border border-zahabi-gold/10 bg-white p-6">
+              <div className="relative w-full h-full flex items-center justify-center">
+                <div className="absolute inset-0 flex items-center justify-center opacity-10">
+                  <div className="w-3/4 h-3/4 rounded-full border-8 border-zahabi-gold animate-pulse"></div>
+                </div>
+                <div className="w-48 h-48 rounded-full bg-gradient-to-br from-zahabi-gold/20 to-zahabi-orange/20 flex items-center justify-center">
+                  <div className="w-36 h-36 rounded-full bg-gradient-to-br from-zahabi-gold/30 to-zahabi-orange/30 flex items-center justify-center">
+                    <div className="w-24 h-24 rounded-full bg-gradient-to-br from-zahabi-gold to-zahabi-orange flex items-center justify-center text-white text-4xl font-bold">
+                      Au
                     </div>
                   </div>
                 </div>
@@ -94,9 +48,12 @@ const Hero = () => {
             </div>
             
             {/* Decorative elements */}
-            <div className="absolute w-32 h-32 top-10 -right-10 rounded-full glass-dark animate-float"></div>
-            <div className="absolute w-24 h-24 bottom-16 -left-10 rounded-full glass animate-float" style={{ animationDelay: '1.5s' }}></div>
-            <div className="absolute w-16 h-16 top-1/4 -left-12 rounded-full glass-dark animate-float" style={{ animationDelay: '2s' }}></div>
+            <div className="absolute w-20 h-20 -top-6 -right-6 rounded-full bg-white shadow-lg border border-zahabi-gold/10 flex items-center justify-center">
+              <div className="w-10 h-10 rounded-full bg-zahabi-gold"></div>
+            </div>
+            <div className="absolute w-16 h-16 -bottom-6 -left-6 rounded-full bg-white shadow-lg border border-zahabi-gold/10 flex items-center justify-center">
+              <span className="text-zahabi-gold text-xl font-semibold">24k</span>
+            </div>
           </div>
         </div>
       </div>

@@ -2,8 +2,9 @@
 import React, { useEffect } from "react";
 import Navbar from "@/components/layout/Navbar";
 import Hero from "@/components/home/Hero";
-import Features from "@/components/home/Features";
-import ProductShowcase from "@/components/home/ProductShowcase";
+import ForBorrowers from "@/components/home/ForBorrowers";
+import ForInvestors from "@/components/home/ForInvestors";
+import HowItWorks from "@/components/home/HowItWorks";
 import Footer from "@/components/layout/Footer";
 
 const Index = () => {
@@ -32,8 +33,9 @@ const Index = () => {
     <div className="min-h-screen bg-white">
       <Navbar />
       <Hero />
-      <Features />
-      <ProductShowcase />
+      <ForBorrowers />
+      <ForInvestors />
+      <HowItWorks />
       <Footer />
     </div>
   );

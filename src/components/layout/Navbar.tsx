@@ -33,48 +33,56 @@ const Navbar = () => {
       className={cn(
         "fixed top-0 left-0 right-0 z-50 w-full transition-all duration-300",
         scrolled
-          ? "py-3 glass shadow-sm border-b border-purple/10"
-          : "py-6 bg-transparent"
+          ? "py-3 glass shadow-sm border-b border-zahabi-gold/10"
+          : "py-4 bg-white"
       )}
     >
       <div className="container mx-auto px-6 flex items-center justify-between">
         <a href="/" className="flex items-center">
-          <span className="text-2xl font-semibold tracking-tighter text-gradient">
-            elegance
+          <span className="mr-2 text-zahabi-gold">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+              <path d="M12 3L4 9V21H20V9L12 3ZM12 5.17L18 9.6V19H6V9.6L12 5.17Z" />
+              <path d="M12 18C14.2091 18 16 16.2091 16 14C16 11.7909 14.2091 10 12 10C9.79086 10 8 11.7909 8 14C8 16.2091 9.79086 18 12 18Z" />
+            </svg>
+          </span>
+          <span className="text-2xl font-semibold tracking-tighter">
+            Zahabi
           </span>
         </a>
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-8">
           <a 
-            href="#features" 
-            className="text-sm font-medium text-foreground hover:text-purple transition-colors duration-200"
+            href="#for-borrowers" 
+            className="text-sm font-medium text-foreground hover:text-zahabi-gold transition-colors duration-200"
           >
-            Features
+            For Borrowers
           </a>
           <a 
-            href="#products" 
-            className="text-sm font-medium text-foreground hover:text-purple transition-colors duration-200"
+            href="#for-investors" 
+            className="text-sm font-medium text-foreground hover:text-zahabi-gold transition-colors duration-200"
           >
-            Products
+            For Investors
           </a>
           <a 
-            href="#pricing" 
-            className="text-sm font-medium text-foreground hover:text-purple transition-colors duration-200"
+            href="#how-it-works" 
+            className="text-sm font-medium text-foreground hover:text-zahabi-gold transition-colors duration-200"
           >
-            Pricing
-          </a>
-          <a 
-            href="#about" 
-            className="text-sm font-medium text-foreground hover:text-purple transition-colors duration-200"
-          >
-            About
+            How It Works
           </a>
         </nav>
 
-        {/* CTA Button */}
-        <div className="hidden md:block">
-          <CustomButton>Get Started</CustomButton>
+        {/* CTA Buttons */}
+        <div className="hidden md:flex items-center gap-4">
+          <a 
+            href="/login" 
+            className="text-sm font-medium text-foreground hover:text-zahabi-gold transition-colors duration-200"
+          >
+            Log In
+          </a>
+          <CustomButton variant="outline" size="sm" className="border-zahabi-gold text-zahabi-dark">
+            Sign up
+          </CustomButton>
         </div>
 
         {/* Mobile Menu Button */}
@@ -108,41 +116,41 @@ const Navbar = () => {
         {/* Mobile Menu */}
         <div 
           className={cn(
-            "fixed top-[72px] left-0 right-0 bottom-0 bg-white/95 backdrop-blur-md transition-transform duration-300 ease-in-out md:hidden glass-dark",
+            "fixed top-[60px] left-0 right-0 bottom-0 bg-white/95 backdrop-blur-md transition-transform duration-300 ease-in-out md:hidden",
             menuOpen ? "translate-x-0" : "translate-x-full"
           )}
         >
           <div className="flex flex-col items-center justify-center h-full space-y-8 p-8">
             <a 
-              href="#features" 
-              className="text-lg font-medium hover:text-purple transition-colors"
+              href="#for-borrowers" 
+              className="text-lg font-medium hover:text-zahabi-gold transition-colors"
               onClick={toggleMenu}
             >
-              Features
+              For Borrowers
             </a>
             <a 
-              href="#products" 
-              className="text-lg font-medium hover:text-purple transition-colors"
+              href="#for-investors" 
+              className="text-lg font-medium hover:text-zahabi-gold transition-colors"
               onClick={toggleMenu}
             >
-              Products
+              For Investors
             </a>
             <a 
-              href="#pricing" 
-              className="text-lg font-medium hover:text-purple transition-colors"
+              href="#how-it-works" 
+              className="text-lg font-medium hover:text-zahabi-gold transition-colors"
               onClick={toggleMenu}
             >
-              Pricing
+              How It Works
             </a>
             <a 
-              href="#about" 
-              className="text-lg font-medium hover:text-purple transition-colors"
+              href="/login" 
+              className="text-lg font-medium hover:text-zahabi-gold transition-colors"
               onClick={toggleMenu}
             >
-              About
+              Log In
             </a>
-            <CustomButton size="lg" onClick={toggleMenu}>
-              Get Started
+            <CustomButton size="lg" variant="outline" className="border-zahabi-gold text-zahabi-dark" onClick={toggleMenu}>
+              Sign up
             </CustomButton>
           </div>
         </div>
