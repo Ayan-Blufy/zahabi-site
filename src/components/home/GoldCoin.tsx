@@ -1,13 +1,15 @@
 import React, { useRef } from "react";
-import { Canvas } from "@react-three/fiber";
-import { Float, PresentationControls, Environment } from "@react-three/drei";
+import { Canvas ,useFrame} from "@react-three/fiber";
+import { Float, PresentationControls, Environment ,OrbitControls} from "@react-three/drei";
 
 const GoldCoin = () => {
+    
   return (
     <div className="w-full h-full min-h-[300px]">
       <Canvas dpr={[1, 2]} shadows camera={{ position: [0, 0, 5], fov: 50 }}>
         <ambientLight intensity={0.5} />
         <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
+        <OrbitControls enableZoom={false} />
         <PresentationControls
           global
           config={{ mass: 2, tension: 500 }}
@@ -16,7 +18,7 @@ const GoldCoin = () => {
           polar={[-Math.PI / 3, Math.PI / 3]}
           azimuth={[-Math.PI / 1.4, Math.PI / 2]}
         >
-          <Float rotationIntensity={0.4}>
+          <Float rotationIntensity={4} floatIntensity={2} speed={2}>
             <mesh>
               <cylinderGeometry args={[2, 2, 0.4, 64]} />
               <meshStandardMaterial color="#D4AF37" metalness={0.8} roughness={0.3} />

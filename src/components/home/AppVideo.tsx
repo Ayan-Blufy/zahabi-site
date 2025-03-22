@@ -122,7 +122,7 @@ const AppVideo = () => {
           {/* Play/Pause Button */}
           <button 
             onClick={togglePlay}
-            className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-16 h-16 md:w-20 md:h-20 flex items-center justify-center rounded-full bg-purple text-white hover:bg-purple transition-all duration-300 focus:outline-none"
+            className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-16 h-16 md:w-20 md:h-20 flex items-center justify-center rounded-full bg-zahabi-gold text-white hover:bg-zahabi-gold transition-all duration-300 focus:outline-none"
           >
             {isPlaying ? (
               <Pause className="h-8 w-8" />

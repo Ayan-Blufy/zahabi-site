@@ -69,12 +69,12 @@ export default {
 					dark: '#6E59A5'
 				},
 				gold: {
-					light: '#c4b5fd',
-					DEFAULT: '#c4b5fd',
-					dark: '#c4b5fd'
+					light: '#FFD700',
+					DEFAULT: '#D4AF37',
+					dark: '#996515'
 				},
 				zahabi: {
-					cream: '#ddd6fe',
+					cream: '#FFF8E1',
 					gold: '#D4AF37',
 					orange: '#E67E22',
 					purple: '#9B87F5',

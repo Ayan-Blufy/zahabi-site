@@ -54,29 +54,29 @@ const Navbar = () => {
         <nav className="hidden md:flex items-center space-x-8">
         <a 
             href="#how-it-works" 
-            className="text-sm font-medium text-foreground hover:text-zahabi-gold transition-colors duration-200"
+            className="text-sm font-medium text-foreground hover:text-gold transition-colors duration-200"
           >
             How It Works
           </a>
           
           <a 
             href="#for-borrowers" 
-            className="text-sm font-medium text-foreground hover:text-zahabi-gold transition-colors duration-200"
+            className="text-sm font-medium text-foreground hover:text-gold transition-colors duration-200"
           >
             For Borrowers
           </a>
           <a 
             href="#for-investors" 
-            className="text-sm font-medium text-foreground hover:text-zahabi-gold transition-colors duration-200"
+            className="text-sm font-medium text-foreground hover:text-gold transition-colors duration-200"
           >
             For Investors
           </a>
-         
+      
         </nav>
 
         {/* CTA Buttons */}
         <div className="hidden md:flex items-center gap-4">
-          <CustomButton variant="outline" size="sm" className="border-purple-200 hover:bg-purple-50 hover:text-purple-700">
+          <CustomButton href="mailto:modakaryan11@gmail.com"  variant="outline"  size="sm" className="border-gold-200 hover:bg-gold-400 hover:text-gold-700">
            Let's connect 
           </CustomButton>
         </div>
@@ -140,8 +140,13 @@ const Navbar = () => {
               For Investors
             </a>
             
-      
-            <CustomButton size="lg" variant="outline" className="border-purple-200 hover:bg-purple-50 hover:text-purple-700" onClick={toggleMenu}>
+            <a 
+              href="mailto:modakaryan11@gmail.com" target="_blank"
+                className="border-gold-200 hover:bg-gold-50 hover:text-gold-700" onClick={toggleMenu}>
+              Let's connect
+    
+            </a>
+            <CustomButton size="lg" variant="outline" className="border-gold-200 hover:bg-gold-50 hover:text-gold-700" onClick={toggleMenu}>
              Let's connect
             </CustomButton>
           </div>

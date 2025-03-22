@@ -7,10 +7,13 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   size?: "default" | "sm" | "lg" | "icon";
   children: React.ReactNode;
   className?: string;
+  href?: string;
+
 }
 
 const CustomButton = React.forwardRef<HTMLButtonElement, ButtonProps>(
-  ({ className, variant = "default", size = "default", children, ...props }, ref) => {
+  ({ className, variant = "default", size = "default", children,href, ...props }, ref) => {
+    const Component = href ? "a" : "button";
     return (
       <button
         className={cn(
