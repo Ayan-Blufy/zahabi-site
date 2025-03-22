@@ -139,13 +139,6 @@ const Navbar = () => {
             >
               For Investors
             </a>
-            
-            <a 
-              href="mailto:modakaryan11@gmail.com" target="_blank"
-                className="border-gold-200 hover:bg-gold-50 hover:text-gold-700" onClick={toggleMenu}>
-              Let's connect
-    
-            </a>
             <CustomButton size="lg" variant="outline" className="border-gold-200 hover:bg-gold-50 hover:text-gold-700" onClick={toggleMenu}>
              Let's connect
             </CustomButton>
