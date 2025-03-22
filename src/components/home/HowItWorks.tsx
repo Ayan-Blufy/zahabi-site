@@ -24,7 +24,7 @@ const HowItWorks = () => {
         value="borrowers"
         data-state={activeTab === 'borrowers' ? 'active' : undefined}
         onClick={() => setActiveTab('borrowers')}
-        className="data-[state=active]:bg-gold-dark data-[state=active]:text-white duration-300 ease-in-out cursor-pointer"
+        className="data-[state=active]:bg-gold-dark data-[state=active]:text-white duration-300 ease-in-out cursor-pointer rounded-full"
       >
         For Borrowers
       </TabsTrigger>
@@ -32,7 +32,7 @@ const HowItWorks = () => {
         value="investors"
         data-state={activeTab === 'investors' ? 'active' : undefined}
         onClick={() => setActiveTab('investors')}
-        className="data-[state=active]:bg-gold-dark data-[state=active]:text-white duration-300 ease-in-out cursor-pointer"
+        className="data-[state=active]:bg-gold-dark data-[state=active]:text-white duration-300 ease-in-out cursor-pointer rounded-full"
       >
         For Investors
       </TabsTrigger>
