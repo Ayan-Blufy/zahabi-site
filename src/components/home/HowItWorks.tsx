@@ -1,9 +1,10 @@
 
-import React from "react";
+import React, { useState } from "react";
 import { Check, Coins, ArrowRight, ShieldCheck, Users, BanknoteIcon, TrendingUp, Repeat } from "lucide-react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@radix-ui/react-tabs";
 
 const HowItWorks = () => {
+  const [activeTab, setActiveTab] = useState('borrowers');
   return (
     <section id="how-it-works" className="w-full bg-zahabi-cream/50 py-12 md:py-24 lg:py-32">
     <div className="container px-4 md:px-6">
@@ -18,9 +19,23 @@ const HowItWorks = () => {
       </div>
 
       <Tabs defaultValue="borrowers" className="mt-8">
-        <TabsList className="grid w-full max-w-md mx-auto grid-cols-2">
-          <TabsTrigger value="borrowers">For Borrowers</TabsTrigger>
-          <TabsTrigger value="investors">For Investors</TabsTrigger>
+        <TabsList className="grid w-full max-w-md mx-auto grid-cols-2 gap-4">
+        <TabsTrigger
+        value="borrowers"
+        data-state={activeTab === 'borrowers' ? 'active' : undefined}
+        onClick={() => setActiveTab('borrowers')}
+        className="data-[state=active]:bg-gold-dark data-[state=active]:text-white duration-300 ease-in-out cursor-pointer"
+      >
+        For Borrowers
+      </TabsTrigger>
+      <TabsTrigger
+        value="investors"
+        data-state={activeTab === 'investors' ? 'active' : undefined}
+        onClick={() => setActiveTab('investors')}
+        className="data-[state=active]:bg-gold-dark data-[state=active]:text-white duration-300 ease-in-out cursor-pointer"
+      >
+        For Investors
+      </TabsTrigger>
         </TabsList>
 
         <TabsContent value="borrowers" className="mt-6">

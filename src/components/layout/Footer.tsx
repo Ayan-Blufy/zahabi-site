@@ -8,7 +8,7 @@ const Footer = () => {
       {/* Background gradients */}
    
       <div className="border-t pt-6 pb-4">
-            <div className="flex flex-col md:flex-row items-center justify-between gap-4">
+            <div className="flex flex-col md:flex-row items-center justify-between gap-4 px-6">
               <p className="text-center text-zahabi-gold leading-loose text-muted-foreground md:text-left">
                 © 2025 Zahabi.in All rights reserved.
               </p>

@@ -71,7 +71,7 @@ export default {
 				gold: {
 					light: '#FFD700',
 					DEFAULT: '#D4AF37',
-					dark: '#996515'
+					dark: '#cc9900'
 				},
 				zahabi: {
 					cream: '#FFF8E1',
