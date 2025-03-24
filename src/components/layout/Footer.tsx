@@ -33,7 +33,7 @@ const Footer = () => {
               <CustomButton variant="gold" size="lg" href="mailto:modakaryan11@gmail.com">  
                 Get Started
               </CustomButton>
-              <CustomButton variant="outline" size="lg" href="#how-it-works">
+              <CustomButton variant="outline" size="lg" href="#app-video">
                 Learn More
               </CustomButton>
             </div>
