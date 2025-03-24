@@ -21,7 +21,6 @@ import {
 const Footer = () => {
   return (
     <footer className="bg-white relative">
-      {/* Pre-footer CTA section */}
       <div className="bg-zahabi-cream/60 py-16">
         <div className="container mx-auto px-6">
           <div className="flex flex-col lg:flex-row items-center justify-between gap-8">
