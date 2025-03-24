@@ -136,8 +136,8 @@ const Navbar = () => {
           <CustomButton
             href="mailto:modakaryan11@gmail.com"
             variant="outline"
-            size="sm"
-            className="border-gold-200 hover:bg-gold-400 hover:text-gold-700"
+            className="border-gold-200 hover:bg-gold-50 hover:text-gold-700"
+            onClick={toggleMenu}
           >
             Let's connect
           </CustomButton>
@@ -174,8 +174,9 @@ const Navbar = () => {
         {/* Mobile Menu */}
         <div
           className={cn(
-            "fixed top-[60px] left-0 right-0 bottom-0 bg-white/95 backdrop-blur-md transition-transform duration-300 ease-in-out md:hidden",
-            menuOpen ? "translate-x-0" : "translate-x-full"
+            "absolute left-0 right-0 bg-white/95 backdrop-blur-md overflow-hidden transition-all duration-300 ease-in-out md:hidden z-40",
+            menuOpen ? "max-h-screen opacity-100 translate-y-0" : "max-h-0 opacity-0 -translate-y-4",
+            "top-full"
           )}
         >
           <div className="flex flex-col items-center justify-center h-full space-y-8 p-8">
@@ -202,6 +203,7 @@ const Navbar = () => {
               For Investors
             </a>
             <CustomButton
+              href="mailto:modakaryan11@gmail.com"
               size="lg"
               variant="outline"
               className="border-gold-200 hover:bg-gold-50 hover:text-gold-700"
