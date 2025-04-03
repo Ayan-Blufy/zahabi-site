@@ -29,7 +29,7 @@ const Footer = () => {
               <p className="text-gray-600 mb-6">Join Zahabi today and discover a world of opportunities in gold investments.</p>
             </div>
             <div className="flex flex-col sm:flex-row gap-4">
-              <CustomButton variant="gold" size="lg" href="mailto:modakaryan11@gmail.com">  
+              <CustomButton variant="gold" size="lg" href="mailto:ayan@zahabi.in">  
                 Get Started
               </CustomButton>
               <CustomButton variant="outline" size="lg" href="#app-video">
@@ -96,7 +96,7 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-start text-gray-600">
                 <Mail size={18} className="mr-3 mt-1 text-zahabi-gold" />
-                <span>modakaryan11@gmail.com</span>
+                <span>ayan@zahabi.in</span>
               </li>
               <li className="flex items-start text-gray-600">
                 <Phone size={18} className="mr-3 mt-1 text-zahabi-gold" />

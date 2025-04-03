@@ -134,7 +134,7 @@ const Navbar = () => {
         {/* CTA Buttons */}
         <div className="hidden md:flex items-center gap-4">
           <CustomButton
-            href="mailto:modakaryan11@gmail.com"
+            href="mailto:ayan@zahabi.in"
             variant="outline"
             className="border-gold-200 hover:bg-gold-50 hover:text-gold-700"
             onClick={toggleMenu}
@@ -203,7 +203,7 @@ const Navbar = () => {
               For Investors
             </a>
             <CustomButton
-              href="mailto:modakaryan11@gmail.com"
+              href="mailto:ayan@zahabi.in"
               size="lg"
               variant="outline"
               className="border-gold-200 hover:bg-gold-50 hover:text-gold-700"
