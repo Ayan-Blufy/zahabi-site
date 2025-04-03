@@ -67,7 +67,7 @@ const ForInvestors = () => {
                 <div>
                   <h3 className="text-lg font-semibold mb-2">Earn Passive Income</h3>
                   <p className="text-muted-foreground text-sm mb-3">
-                    Stake your gold tokens to earn additional passive income. Current staking APY is <span className="font-semibold text-white">5.2%</span>.
+                    Stake your gold tokens to earn additional passive income. Current staking APY is <span className="font-semibold text-gold-dark">5.2%</span>.
                   </p>
                   <CustomButton variant="outline" size="sm" className="border-white-200 hover:bg-white-50 hover:text-white-700">
                     Learn About Staking
