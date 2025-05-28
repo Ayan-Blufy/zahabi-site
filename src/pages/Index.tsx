@@ -8,12 +8,14 @@ import HowItWorks from "@/components/home/HowItWorks";
 import Footer from "@/components/layout/Footer";
 import KeyFeatures from "@/components/home/KeyFeatures";
 import AppVideo from "@/components/home/AppVideo";
-import ReactGa from "react-ga";
+import ReactGA from "react-ga4";
+import { useLocation } from "react-router-dom";
 // Initialize Google Analytics
 const Index = () => {
   // Smooth scroll for anchor links
   useEffect(() => {
-    ReactGa.pageview(window.location.pathname + window.location.search); // Track the initial page view
+    const location = useLocation();
+    ReactGA.send({ hitType: "pageview", page: location.pathname + location.search });
     
     const handleAnchorClick = (e: MouseEvent) => {
       const target = e.target as HTMLElement;
