@@ -13,8 +13,9 @@ import { useLocation } from "react-router-dom";
 // Initialize Google Analytics
 const Index = () => {
   // Smooth scroll for anchor links
+  const location = useLocation();
+
   useEffect(() => {
-    const location = useLocation();
     ReactGA.send({ hitType: "pageview", page: location.pathname + location.search });
     
     const handleAnchorClick = (e: MouseEvent) => {
