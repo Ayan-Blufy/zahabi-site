@@ -26,7 +26,7 @@ const fetchVideoData = async (): Promise<VideoData> => {
         id: "gold-demo-1",
         title: "See Zahabi in Action",
         description: "Watch how our platform revolutionizes gold-backed financing and investing",
-        url: "https://zahabi-test-78997878.s3.ap-south-1.amazonaws.com/Zahabi(Final).mp4",
+        url: "https://zahabi-test-78997878.s3.ap-south-1.amazonaws.com/Zahabi+copyrights.mp4",
         posterUrl: "https://images.unsplash.com/photo-1610375461369-d613b564dbdc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
         features: [
           {
