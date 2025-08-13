@@ -42,9 +42,9 @@ const InvestorPhoneModel = () => {
             {/* Token listings */}
             {[
               { name: "Kalyan Jewellers", goldWeight: "X", price: "Rs.XXXX", available: "XXX" },
-              { name: "PNG Jewellers", goldWeight: "X", price: "Rs.XXXX", available: "XXX" },
-              { name: "Kalyan Jewellers", goldWeight: "X", price: "Rs.XXXX", available: "XXX" },
-              { name: "PNG Jewellers", goldWeight: "X", price: "Rs.XXXX", available: "XXX" }
+              { name: "Png Jewellers", goldWeight: "X", price: "Rs.XXXX", available: "XXX" },
+              { name: "Tanishq Jewellers", goldWeight: "X", price: "Rs.XXXX", available: "XXX" },
+              { name: "Waman hari pethe Jewellers", goldWeight: "X", price: "Rs.XXXX", available: "XXX" }
             ].map((seller, index) => (
               <div key={index} className="border border-gray-200 rounded-lg p-4 mb-4">
                 <p className="font-semibold mb-2">{seller.name}</p>
