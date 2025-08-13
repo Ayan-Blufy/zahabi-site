@@ -1,28 +1,30 @@
 import React from "react";
 import { Filter, ArrowRight } from "lucide-react";
+import { Card } from "../ui/card";
+import { Button } from "../ui/button";
 
 const PhoneModel = () => {
   const lenders = [
     {
-      name: "Kalyan Jewellers",
+      name: "Aditya Birla Capital",
       ratePerGram: "RS.8,035",
       interestRate: "8.5%",
       loanAvailable: "RS.10,000 - RS.200,000"
     },
     {
-      name: "PNG Jewellers",
+      name: "Bajaj Finance Limited",
       ratePerGram: "RS.7,980",
       interestRate: "8.3%",
       loanAvailable: "RS.15,000 - RS.250,000"
     },
     {
-      name: "HDFC Bank",
+      name: "HDFC Financial Services",
       ratePerGram: "RS.8,100",
       interestRate: "7.9%",
       loanAvailable: "RS.20,000 - RS.300,000"
     },
     {
-      name: "Yes Bank",
+      name: "Shriram Financial Services",
       ratePerGram: "RS.8,000",
       interestRate: "8.0%",
       loanAvailable: "RS.5,000 - RS.150,000"
@@ -112,7 +114,7 @@ const PhoneModel = () => {
               </div>
             ))}
           </div>
-          
+        
           {/* Bottom navigation bar */}
           <div className="absolute bottom-0 left-0 right-0 bg-black text-white flex justify-around py-3 text-xs z-10">
             <div className="flex flex-col items-center">
