@@ -10,6 +10,7 @@ import KeyFeatures from "@/components/home/KeyFeatures";
 import AppVideo from "@/components/home/AppVideo";
 import ReactGA from "react-ga4";
 import { useLocation } from "react-router-dom";
+import AIFeature from "@/components/home/AIFeature";
 // Initialize Google Analytics
 const Index = () => {
   // Smooth scroll for anchor links
@@ -42,6 +43,7 @@ const Index = () => {
       <Navbar />
       <Hero />
       <AppVideo />
+      <AIFeature/>
       <HowItWorks />
       <ForBorrowers />
       <ForInvestors />
