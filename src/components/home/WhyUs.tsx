@@ -25,27 +25,28 @@ const WhyUs = () => {
     { x: 45, y: -85 },
     { x: 25, y: -30 },
     { x: -20, y: 40 },
-    { x: -44, y: -8 },
+    { x: -44, y: -12 },
   ];
 
   const cardContents = [
-    {
-      title: "Proven Expertise Across Sectors",
-      desc: "From agriculture to manufacturing, we provide robust, adaptable solutions for diverse supply chains.",
-    },
-    {
-      title: "Innovative Solutions",
-      desc: "Cutting-edge technology and processes to ensure efficiency and sustainability in operations.",
-    },
-    {
-      title: "Reliable Partnerships",
-      desc: "Strong collaborations with stakeholders to achieve scalable and measurable impact.",
-    },
-    {
-      title: "Customer-Centric Approach",
-      desc: "Tailored solutions that prioritize client needs and maximize value.",
-    },
-  ];
+  {
+    title: "Proven Expertise Across Sectors",
+    desc: "From gold-backed financing to digital investments, we provide robust, adaptable solutions for both borrowers and investors.",
+  },
+  {
+    title: "Innovative Solutions",
+    desc: "Cutting-edge technology and processes to enable instant loans, gold token investments, and seamless user experience.",
+  },
+  {
+    title: "Reliable Partnerships",
+    desc: "Strong collaborations with verified lenders and trusted platforms to ensure safety, efficiency, and transparency.",
+  },
+  {
+    title: "Customer-Centric Approach",
+    desc: "Tailored solutions that prioritize your gold ownership goals, maximize returns, and simplify gold-backed financing.",
+  },
+];
+
 
   const svgWidth = 600;
   const svgHeight = 300;
