@@ -11,6 +11,7 @@ import AppVideo from "@/components/home/AppVideo";
 import ReactGA from "react-ga4";
 import { useLocation } from "react-router-dom";
 import AIFeature from "@/components/home/AIFeature";
+import WhyChooseUs from "@/components/home/WhyUs";
 // Initialize Google Analytics
 const Index = () => {
   // Smooth scroll for anchor links
@@ -44,6 +45,7 @@ const Index = () => {
       <Hero />
       <AppVideo />
       <AIFeature/>
+      <WhyChooseUs/>
       <HowItWorks />
       <ForBorrowers />
       <ForInvestors />
