@@ -14,13 +14,13 @@ export default function AIFeature() {
       <div className="flex w-full gap-x-12 items-start md:items-center flex-col md:flex-row">
         {/* LEFT CONTENT */}
         <div className="max-w-xl space-y-3 flex-shrink-0 ml-0 md:ml-8 text-center md:text-left">
-          <h1 className="text-3xl font-bold tracking-tighter md:text-4xl/tight leading-snug">
+          <h1 className="text-2xl font-bold tracking-tighter sm:text-4xl xl:text-6xl/none">
             <span>AI Powered Intelligence for </span>
             <span className="text-gold-dark">Gold-Backed Finance</span>
           </h1>
           <p className="text-muted-foreground md:text-xl text-sm">
-            Watch how our platform revolutionizes gold-backed financing and
-            investing
+            Harness AI-driven insights to unlock the future of secure,
+            transparent, and intelligent gold-backed investing.
           </p>
         </div>
 
