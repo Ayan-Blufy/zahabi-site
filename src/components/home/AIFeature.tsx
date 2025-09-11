@@ -19,8 +19,8 @@ export default function AIFeature() {
             <span className="text-gold-dark">Gold-Backed Finance</span>
           </h1>
           <p className="text-muted-foreground md:text-xl text-sm">
-            Watch how our platform revolutionizes gold-backed financing and
-            investing
+            Harness AI-driven insights to unlock the future of secure,
+            transparent, and intelligent gold-backed investing.
           </p>
         </div>
 

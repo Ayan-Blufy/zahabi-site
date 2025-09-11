@@ -1,4 +1,3 @@
-
 import React, { useEffect } from "react";
 import Navbar from "@/components/layout/Navbar";
 import Hero from "@/components/home/Hero";
@@ -18,18 +17,25 @@ const Index = () => {
   const location = useLocation();
 
   useEffect(() => {
-    ReactGA.send({ hitType: "pageview", page: location.pathname + location.search });
-    
+    ReactGA.send({
+      hitType: "pageview",
+      page: location.pathname + location.search,
+    });
+
     const handleAnchorClick = (e: MouseEvent) => {
       const target = e.target as HTMLElement;
-      if (target.tagName === "A" && target.getAttribute("href")?.startsWith("#")) {
+      if (
+        target.tagName === "A" &&
+        target.getAttribute("href")?.startsWith("#")
+      ) {
         e.preventDefault();
         const id = target.getAttribute("href")?.replace("#", "");
         const element = document.getElementById(id || "");
-        
+
         if (element) {
           const yOffset = -80; // Header offset
-          const y = element.getBoundingClientRect().top + window.scrollY + yOffset;
+          const y =
+            element.getBoundingClientRect().top + window.scrollY + yOffset;
           window.scrollTo({ top: y, behavior: "smooth" });
         }
       }
@@ -44,12 +50,12 @@ const Index = () => {
       <Navbar />
       <Hero />
       <AppVideo />
-      <AIFeature/>
-      <WhyChooseUs/>
       <HowItWorks />
+      <WhyChooseUs />
+      <AIFeature />
       <ForBorrowers />
       <ForInvestors />
-      <KeyFeatures/>
+      <KeyFeatures />
       <Footer />
     </div>
   );
