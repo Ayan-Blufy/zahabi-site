@@ -10,10 +10,10 @@ import GoldCoin from "../../../public/GoldCoin.png";
 
 export default function AIFeature() {
   return (
-    <section className="min-h-screen flex px-6 py-8 bg-zahabi-cream/50">
-      <div className="flex w-full gap-x-12 items-start md:items-center flex-col md:flex-row">
+    <section className="min-h-screen md:min-h-[auto] md:px-6 md:py-20 flex px-6 py-8 bg-zahabi-cream/50">
+      <div className="flex w-full gap-x-12 items-start  lg:items-center flex-col md:flex-col md:gap-20 lg:flex-row">
         {/* LEFT CONTENT */}
-        <div className="max-w-xl space-y-3 flex-shrink-0 ml-0 md:ml-8 text-center md:text-left">
+        <div className="max-w-xl space-y-3 flex-shrink-0 ml-0 md:m-auto text-center md:text-center lg:text-left">
           <h1 className="text-3xl font-bold tracking-tighter md:text-4xl/tight leading-snug">
             <span>AI Powered Intelligence for </span>
             <span className="text-gold-dark">Gold-Backed Finance</span>
@@ -25,7 +25,8 @@ export default function AIFeature() {
         </div>
 
         {/* RIGHT CONTENT */}
-        <div className="flex-1 flex justify-center md:justify-end mt-8 md:mt-0">
+
+        <div className="flex-1 flex justify-center md:m-auto mt-8 md:mt-6 md:w-full lg:mt-auto">
           <div className="relative w-full max-w-[580px] md:h-[460px] flex flex-col items-end md:block md:items-end">
             {/* Lenders Card */}
             <div
