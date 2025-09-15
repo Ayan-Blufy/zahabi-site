@@ -51,8 +51,8 @@ const Index = () => {
       <Hero />
       <AppVideo />
       <HowItWorks />
-      {/* <WhyChooseUs />
-      <AIFeature /> */}
+      <WhyChooseUs />
+      <AIFeature />
       <ForBorrowers />
       <ForInvestors />
       <KeyFeatures />

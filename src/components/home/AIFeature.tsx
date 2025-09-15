@@ -14,7 +14,7 @@ export default function AIFeature() {
       <div className="flex w-full gap-x-12 items-start  lg:items-center flex-col md:flex-col md:gap-20 lg:flex-row">
         {/* LEFT CONTENT */}
         <div className="max-w-xl space-y-3 flex-shrink-0 ml-0 md:m-auto text-center md:text-center lg:text-center">
-          <h1 className="text-3xl font-bold tracking-tighter md:text-4xl/tight leading-snug">
+          <h1 className="text-3xl font-bold tracking-tighter md:text-5xl/tight leading-snug">
             <span>AI Powered Intelligence for </span>
             <span className="text-gold-dark">Gold-Backed Finance</span>
           </h1>
