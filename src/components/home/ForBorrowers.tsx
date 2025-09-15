@@ -7,7 +7,7 @@ import PhoneModel from "./PhoneModel";
 const ForBorrowers = () => {
   return (
     <section id="for-borrowers" className="py-24 bg-white">
-      <div className="container mx-auto px-6">
+      <div className="container mx-auto  px-4 md:px-6">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">For Borrowers</h2>
           <p className="text-muted-foreground">
